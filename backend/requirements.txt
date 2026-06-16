@@ -1,0 +1,12 @@
+# Direct dependencies with version ranges. Lower bounds are the minimums the
+# code targets; upper bounds block the next major release so a future major
+# cannot be pulled into a fresh clone unannounced. For an exact, reproducible
+# install of the known-good versions the test suite passes on, use the pinned
+# lockfile instead:  pip install -r requirements.lock
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+anthropic>=0.40,<1.0
+pytest>=8.0,<10.0
+httpx>=0.27,<1.0
+Pillow>=10.0,<13.0

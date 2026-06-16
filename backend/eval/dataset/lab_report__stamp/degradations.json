@@ -1,0 +1,16 @@
+{
+  "profile": "stamp",
+  "applied": [
+    {
+      "name": "stamp",
+      "severity": 0.5,
+      "params": {
+        "text": "RECEIVED",
+        "center": [
+          411,
+          673
+        ]
+      }
+    }
+  ]
+}

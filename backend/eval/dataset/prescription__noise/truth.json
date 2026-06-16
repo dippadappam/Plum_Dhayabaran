@@ -1,0 +1,16 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Priya Singh",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": "KL/78901/2012",
+  "hospital_name": "Green Valley Hospital, Chennai",
+  "date": "2024-04-13",
+  "diagnosis": "Viral Fever",
+  "treatment": null,
+  "medicines": [
+    "Cetirizine 10mg",
+    "Salbutamol Inhaler"
+  ],
+  "line_items": [],
+  "total": null
+}

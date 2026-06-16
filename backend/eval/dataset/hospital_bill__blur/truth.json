@@ -1,0 +1,22 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Suresh Patil",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": null,
+  "hospital_name": "Green Valley Hospital, Chennai",
+  "date": "2024-09-28",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "X-Ray Chest PA",
+      "amount": 650.0
+    },
+    {
+      "description": "Urine Routine",
+      "amount": 170.0
+    }
+  ],
+  "total": 820.0
+}

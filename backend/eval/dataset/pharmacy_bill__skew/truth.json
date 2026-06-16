@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": null,
+  "hospital_name": "Apollo Pharmacy",
+  "date": "2024-09-24",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Vitamin C 500mg",
+    "Cetirizine 10mg"
+  ],
+  "line_items": [
+    {
+      "description": "Vitamin C 500mg",
+      "amount": 60.0
+    },
+    {
+      "description": "Cetirizine 10mg",
+      "amount": 30.0
+    }
+  ],
+  "total": 90.0
+}

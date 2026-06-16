@@ -1,0 +1,16 @@
+{
+  "profile": "glare",
+  "applied": [
+    {
+      "name": "glare",
+      "severity": 0.5,
+      "params": {
+        "center": [
+          285,
+          402
+        ],
+        "radius": 298
+      }
+    }
+  ]
+}

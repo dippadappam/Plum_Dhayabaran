@@ -1,0 +1,12 @@
+{
+  "profile": "noise",
+  "applied": [
+    {
+      "name": "noise",
+      "severity": 0.5,
+      "params": {
+        "sigma": 43.0
+      }
+    }
+  ]
+}

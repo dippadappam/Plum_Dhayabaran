@@ -1,0 +1,22 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Anita Desai",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Green Valley Hospital, Chennai",
+  "date": "2024-10-20",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Injection Charges",
+      "amount": 250.0
+    },
+    {
+      "description": "Dressing Charges",
+      "amount": 150.0
+    }
+  ],
+  "total": 400.0
+}

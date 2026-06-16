@@ -1,0 +1,30 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Rajesh Kumar",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "MedPlus Chemists",
+  "date": "2024-05-25",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Ibuprofen 400mg",
+    "Paracetamol 650mg",
+    "Cetirizine 10mg"
+  ],
+  "line_items": [
+    {
+      "description": "Ibuprofen 400mg",
+      "amount": 45.5
+    },
+    {
+      "description": "Paracetamol 650mg",
+      "amount": 37.5
+    },
+    {
+      "description": "Cetirizine 10mg",
+      "amount": 10.0
+    }
+  ],
+  "total": 93.0
+}

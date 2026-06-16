@@ -1,0 +1,20 @@
+{
+  "bundle_id": "neg_out_of_period",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "neg_out_of_period:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "neg_out_of_period:bill"
+    }
+  ],
+  "expected": {
+    "decision": "REJECTED",
+    "category": "CONSULTATION",
+    "rejection_reason": "NOT_COVERED"
+  }
+}

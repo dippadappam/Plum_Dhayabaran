@@ -1,0 +1,35 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Priya Singh",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-07-19",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Metformin 500mg",
+    "Pantoprazole 40mg",
+    "Azithromycin 500mg",
+    "ORS Sachet"
+  ],
+  "line_items": [
+    {
+      "description": "Metformin 500mg",
+      "amount": 18.0
+    },
+    {
+      "description": "Pantoprazole 40mg",
+      "amount": 39.0
+    },
+    {
+      "description": "Azithromycin 500mg",
+      "amount": 252.0
+    },
+    {
+      "description": "ORS Sachet",
+      "amount": 252.0
+    }
+  ],
+  "total": 561.0
+}

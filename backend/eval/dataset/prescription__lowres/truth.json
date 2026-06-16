@@ -1,0 +1,17 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Suresh Patil",
+  "doctor_name": "Dr. R. Gupta",
+  "doctor_registration": "DL/34567/2016",
+  "hospital_name": "Sunrise Clinic, Pune",
+  "date": "2024-05-17",
+  "diagnosis": "Type 2 Diabetes Mellitus",
+  "treatment": null,
+  "medicines": [
+    "Salbutamol Inhaler",
+    "Paracetamol 650mg",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

@@ -1,0 +1,13 @@
+{
+  "document_type": "LAB_REPORT",
+  "patient_name": "Suresh Patil",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": null,
+  "hospital_name": "Metropolis Labs",
+  "date": "2024-07-14",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [],
+  "total": null
+}

@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Anita Desai",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-04-26",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "ORS Sachet",
+    "Paracetamol 650mg"
+  ],
+  "line_items": [
+    {
+      "description": "ORS Sachet",
+      "amount": 315.0
+    },
+    {
+      "description": "Paracetamol 650mg",
+      "amount": 15.0
+    }
+  ],
+  "total": 330.0
+}

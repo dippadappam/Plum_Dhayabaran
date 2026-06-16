@@ -1,0 +1,17 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Priya Singh",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": "WB/34567/2015",
+  "hospital_name": "City Medical Centre, Bengaluru",
+  "date": "2024-11-16",
+  "diagnosis": "Viral Fever",
+  "treatment": null,
+  "medicines": [
+    "Metformin 500mg",
+    "Azithromycin 500mg",
+    "Salbutamol Inhaler"
+  ],
+  "line_items": [],
+  "total": null
+}

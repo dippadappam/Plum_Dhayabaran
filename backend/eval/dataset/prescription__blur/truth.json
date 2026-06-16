@@ -1,0 +1,17 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Deepak Shah",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": "AP/67890/2017",
+  "hospital_name": "Apollo Hospitals",
+  "date": "2024-04-21",
+  "diagnosis": "Migraine",
+  "treatment": null,
+  "medicines": [
+    "Pantoprazole 40mg",
+    "Paracetamol 650mg",
+    "ORS Sachet"
+  ],
+  "line_items": [],
+  "total": null
+}

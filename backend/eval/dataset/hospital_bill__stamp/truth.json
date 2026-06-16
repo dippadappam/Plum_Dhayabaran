@@ -1,0 +1,26 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. R. Gupta",
+  "doctor_registration": null,
+  "hospital_name": "Smile Dental Clinic",
+  "date": "2024-09-25",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Dental X-Ray",
+      "amount": 400.0
+    },
+    {
+      "description": "Root Canal Treatment",
+      "amount": 8000.0
+    },
+    {
+      "description": "Tooth Extraction",
+      "amount": 1450.0
+    }
+  ],
+  "total": 9850.0
+}

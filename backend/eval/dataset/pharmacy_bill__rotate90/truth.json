@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Rajesh Kumar",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-08-22",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Vitamin C 500mg",
+    "Salbutamol Inhaler"
+  ],
+  "line_items": [
+    {
+      "description": "Vitamin C 500mg",
+      "amount": 52.0
+    },
+    {
+      "description": "Salbutamol Inhaler",
+      "amount": 1650.0
+    }
+  ],
+  "total": 1702.0
+}

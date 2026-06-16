@@ -1,0 +1,35 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Amit Verma",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-04-14",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "ORS Sachet",
+    "Cetirizine 10mg",
+    "Vitamin C 500mg",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [
+    {
+      "description": "ORS Sachet",
+      "amount": 252.0
+    },
+    {
+      "description": "Cetirizine 10mg",
+      "amount": 20.0
+    },
+    {
+      "description": "Vitamin C 500mg",
+      "amount": 48.0
+    },
+    {
+      "description": "Azithromycin 500mg",
+      "amount": 234.0
+    }
+  ],
+  "total": 554.0
+}

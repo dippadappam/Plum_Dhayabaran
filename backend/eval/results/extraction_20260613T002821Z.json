@@ -1,0 +1,2313 @@
+{
+  "kind": "extraction",
+  "generated": "2026-06-13T00:28:21.484312+00:00",
+  "items": 51,
+  "overall": {
+    "counts": {
+      "correct": 412,
+      "wrong": 21,
+      "missed": 13,
+      "spurious": 75
+    },
+    "precision": 0.8110236220472441,
+    "recall": 0.9237668161434978,
+    "f1": 0.8637316561844864,
+    "hallucination_rate": 0.1889763779527559,
+    "quality": 0.8032629558541267,
+    "scored_fields": 521
+  },
+  "by_doc_type": {
+    "hospital_bill": {
+      "counts": {
+        "correct": 94,
+        "wrong": 7,
+        "missed": 3,
+        "spurious": 6
+      },
+      "precision": 0.8785046728971962,
+      "recall": 0.9038461538461539,
+      "f1": 0.8909952606635071,
+      "hallucination_rate": 0.12149532710280374,
+      "quality": 0.8681818181818182,
+      "scored_fields": 110
+    },
+    "lab_report": {
+      "counts": {
+        "correct": 48,
+        "wrong": 11,
+        "missed": 1,
+        "spurious": 52
+      },
+      "precision": 0.43243243243243246,
+      "recall": 0.8,
+      "f1": 0.5614035087719298,
+      "hallucination_rate": 0.5675675675675675,
+      "quality": 0.4330357142857143,
+      "scored_fields": 112
+    },
+    "pharmacy_bill": {
+      "counts": {
+        "correct": 127,
+        "wrong": 2,
+        "missed": 5,
+        "spurious": 0
+      },
+      "precision": 0.9844961240310077,
+      "recall": 0.9477611940298507,
+      "f1": 0.9657794676806083,
+      "hallucination_rate": 0.015503875968992248,
+      "quality": 0.9664179104477612,
+      "scored_fields": 134
+    },
+    "prescription": {
+      "counts": {
+        "correct": 115,
+        "wrong": 1,
+        "missed": 4,
+        "spurious": 14
+      },
+      "precision": 0.8846153846153846,
+      "recall": 0.9583333333333334,
+      "f1": 0.9199999999999999,
+      "hallucination_rate": 0.11538461538461539,
+      "quality": 0.8731343283582089,
+      "scored_fields": 134
+    },
+    "prescription_hw": {
+      "counts": {
+        "correct": 28,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 3
+      },
+      "precision": 0.9032258064516129,
+      "recall": 1.0,
+      "f1": 0.9491525423728813,
+      "hallucination_rate": 0.0967741935483871,
+      "quality": 0.9032258064516129,
+      "scored_fields": 31
+    }
+  },
+  "by_profile": {
+    "blur": {
+      "counts": {
+        "correct": 32,
+        "wrong": 1,
+        "missed": 0,
+        "spurious": 3
+      },
+      "precision": 0.8888888888888888,
+      "recall": 0.9696969696969697,
+      "f1": 0.927536231884058,
+      "hallucination_rate": 0.1111111111111111,
+      "quality": 0.8888888888888888,
+      "scored_fields": 36
+    },
+    "clean": {
+      "counts": {
+        "correct": 32,
+        "wrong": 2,
+        "missed": 0,
+        "spurious": 4
+      },
+      "precision": 0.8421052631578947,
+      "recall": 0.9411764705882353,
+      "f1": 0.8888888888888888,
+      "hallucination_rate": 0.15789473684210525,
+      "quality": 0.8421052631578947,
+      "scored_fields": 38
+    },
+    "combined_heavy": {
+      "counts": {
+        "correct": 14,
+        "wrong": 7,
+        "missed": 13,
+        "spurious": 4
+      },
+      "precision": 0.56,
+      "recall": 0.4117647058823529,
+      "f1": 0.4745762711864407,
+      "hallucination_rate": 0.44,
+      "quality": 0.5394736842105263,
+      "scored_fields": 38
+    },
+    "combined_moderate": {
+      "counts": {
+        "correct": 37,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 7
+      },
+      "precision": 0.8409090909090909,
+      "recall": 1.0,
+      "f1": 0.9135802469135803,
+      "hallucination_rate": 0.1590909090909091,
+      "quality": 0.8409090909090909,
+      "scored_fields": 44
+    },
+    "crumple": {
+      "counts": {
+        "correct": 39,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 7
+      },
+      "precision": 0.8478260869565217,
+      "recall": 1.0,
+      "f1": 0.9176470588235294,
+      "hallucination_rate": 0.15217391304347827,
+      "quality": 0.8478260869565217,
+      "scored_fields": 46
+    },
+    "glare": {
+      "counts": {
+        "correct": 31,
+        "wrong": 2,
+        "missed": 0,
+        "spurious": 7
+      },
+      "precision": 0.775,
+      "recall": 0.9393939393939394,
+      "f1": 0.8493150684931509,
+      "hallucination_rate": 0.225,
+      "quality": 0.775,
+      "scored_fields": 40
+    },
+    "handwritten": {
+      "counts": {
+        "correct": 9,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 1
+      },
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9473684210526316,
+      "hallucination_rate": 0.1,
+      "quality": 0.9,
+      "scored_fields": 10
+    },
+    "handwritten_blur": {
+      "counts": {
+        "correct": 10,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 1
+      },
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1": 0.9523809523809523,
+      "hallucination_rate": 0.09090909090909091,
+      "quality": 0.9090909090909091,
+      "scored_fields": 11
+    },
+    "handwritten_skew": {
+      "counts": {
+        "correct": 9,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 1
+      },
+      "precision": 0.9,
+      "recall": 1.0,
+      "f1": 0.9473684210526316,
+      "hallucination_rate": 0.1,
+      "quality": 0.9,
+      "scored_fields": 10
+    },
+    "lowres": {
+      "counts": {
+        "correct": 32,
+        "wrong": 1,
+        "missed": 0,
+        "spurious": 8
+      },
+      "precision": 0.7804878048780488,
+      "recall": 0.9696969696969697,
+      "f1": 0.8648648648648648,
+      "hallucination_rate": 0.21951219512195122,
+      "quality": 0.7804878048780488,
+      "scored_fields": 41
+    },
+    "noise": {
+      "counts": {
+        "correct": 32,
+        "wrong": 2,
+        "missed": 0,
+        "spurious": 8
+      },
+      "precision": 0.7619047619047619,
+      "recall": 0.9411764705882353,
+      "f1": 0.8421052631578947,
+      "hallucination_rate": 0.23809523809523808,
+      "quality": 0.7619047619047619,
+      "scored_fields": 42
+    },
+    "rotate90": {
+      "counts": {
+        "correct": 32,
+        "wrong": 1,
+        "missed": 0,
+        "spurious": 8
+      },
+      "precision": 0.7804878048780488,
+      "recall": 0.9696969696969697,
+      "f1": 0.8648648648648648,
+      "hallucination_rate": 0.21951219512195122,
+      "quality": 0.7804878048780488,
+      "scored_fields": 41
+    },
+    "shadow": {
+      "counts": {
+        "correct": 37,
+        "wrong": 2,
+        "missed": 0,
+        "spurious": 4
+      },
+      "precision": 0.8604651162790697,
+      "recall": 0.9487179487179487,
+      "f1": 0.9024390243902439,
+      "hallucination_rate": 0.13953488372093023,
+      "quality": 0.8604651162790697,
+      "scored_fields": 43
+    },
+    "skew": {
+      "counts": {
+        "correct": 34,
+        "wrong": 1,
+        "missed": 0,
+        "spurious": 3
+      },
+      "precision": 0.8947368421052632,
+      "recall": 0.9714285714285714,
+      "f1": 0.9315068493150684,
+      "hallucination_rate": 0.10526315789473684,
+      "quality": 0.8947368421052632,
+      "scored_fields": 38
+    },
+    "stamp": {
+      "counts": {
+        "correct": 32,
+        "wrong": 2,
+        "missed": 0,
+        "spurious": 9
+      },
+      "precision": 0.7441860465116279,
+      "recall": 0.9411764705882353,
+      "f1": 0.8311688311688312,
+      "hallucination_rate": 0.2558139534883721,
+      "quality": 0.7441860465116279,
+      "scored_fields": 43
+    }
+  },
+  "by_field": {
+    "date": {
+      "counts": {
+        "correct": 48,
+        "wrong": 2,
+        "missed": 1,
+        "spurious": 0
+      },
+      "precision": 0.96,
+      "recall": 0.9411764705882353,
+      "f1": 0.9504950495049505,
+      "hallucination_rate": 0.04,
+      "quality": 0.9509803921568627,
+      "scored_fields": 51
+    },
+    "diagnosis": {
+      "counts": {
+        "correct": 15,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 0
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "hallucination_rate": 0.0,
+      "quality": 1.0,
+      "scored_fields": 15
+    },
+    "doctor_name": {
+      "counts": {
+        "correct": 39,
+        "wrong": 11,
+        "missed": 1,
+        "spurious": 0
+      },
+      "precision": 0.78,
+      "recall": 0.7647058823529411,
+      "f1": 0.7722772277227723,
+      "hallucination_rate": 0.22,
+      "quality": 0.7745098039215687,
+      "scored_fields": 51
+    },
+    "doctor_registration": {
+      "counts": {
+        "correct": 14,
+        "wrong": 0,
+        "missed": 1,
+        "spurious": 11
+      },
+      "precision": 0.56,
+      "recall": 0.9333333333333333,
+      "f1": 0.7000000000000001,
+      "hallucination_rate": 0.44,
+      "quality": 0.5576923076923077,
+      "scored_fields": 26
+    },
+    "document_type": {
+      "counts": {
+        "correct": 46,
+        "wrong": 5,
+        "missed": 0,
+        "spurious": 0
+      },
+      "precision": 0.9019607843137255,
+      "recall": 0.9019607843137255,
+      "f1": 0.9019607843137255,
+      "hallucination_rate": 0.09803921568627451,
+      "quality": 0.9019607843137255,
+      "scored_fields": 51
+    },
+    "hospital_name": {
+      "counts": {
+        "correct": 51,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 0
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "hallucination_rate": 0.0,
+      "quality": 1.0,
+      "scored_fields": 51
+    },
+    "line_items[]": {
+      "counts": {
+        "correct": 59,
+        "wrong": 2,
+        "missed": 2,
+        "spurious": 31
+      },
+      "precision": 0.6413043478260869,
+      "recall": 0.9365079365079365,
+      "f1": 0.7612903225806451,
+      "hallucination_rate": 0.358695652173913,
+      "quality": 0.6382978723404256,
+      "scored_fields": 94
+    },
+    "medicines[]": {
+      "counts": {
+        "correct": 69,
+        "wrong": 0,
+        "missed": 5,
+        "spurious": 3
+      },
+      "precision": 0.9583333333333334,
+      "recall": 0.9324324324324325,
+      "f1": 0.9452054794520548,
+      "hallucination_rate": 0.041666666666666664,
+      "quality": 0.9285714285714286,
+      "scored_fields": 77
+    },
+    "patient_name": {
+      "counts": {
+        "correct": 48,
+        "wrong": 0,
+        "missed": 3,
+        "spurious": 0
+      },
+      "precision": 1.0,
+      "recall": 0.9411764705882353,
+      "f1": 0.9696969696969697,
+      "hallucination_rate": 0.0,
+      "quality": 0.9705882352941176,
+      "scored_fields": 51
+    },
+    "total": {
+      "counts": {
+        "correct": 23,
+        "wrong": 1,
+        "missed": 0,
+        "spurious": 0
+      },
+      "precision": 0.9583333333333334,
+      "recall": 0.9583333333333334,
+      "f1": 0.9583333333333334,
+      "hallucination_rate": 0.041666666666666664,
+      "quality": 0.9583333333333334,
+      "scored_fields": 24
+    },
+    "treatment": {
+      "counts": {
+        "correct": 0,
+        "wrong": 0,
+        "missed": 0,
+        "spurious": 30
+      },
+      "precision": 0.0,
+      "recall": null,
+      "f1": null,
+      "hallucination_rate": 1.0,
+      "quality": 0.0,
+      "scored_fields": 30
+    }
+  },
+  "reliability": [
+    {
+      "bucket": "0.0-0.5",
+      "documents": 3,
+      "mean_stated": 0.31666666666666665,
+      "field_accuracy": 0.3333333333333333
+    },
+    {
+      "bucket": "0.5-0.7",
+      "documents": 1,
+      "mean_stated": 0.55,
+      "field_accuracy": 0.42857142857142855
+    },
+    {
+      "bucket": "0.7-0.8",
+      "documents": 0,
+      "mean_stated": null,
+      "field_accuracy": null
+    },
+    {
+      "bucket": "0.8-0.9",
+      "documents": 6,
+      "mean_stated": 0.8300000000000001,
+      "field_accuracy": 0.8656716417910447
+    },
+    {
+      "bucket": "0.9-1.0",
+      "documents": 41,
+      "mean_stated": 0.9746341463414636,
+      "field_accuracy": 0.8173076923076923
+    }
+  ],
+  "extraction_failures": [],
+  "details": [
+    {
+      "id": "hospital_bill__blur",
+      "profile": "blur",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 8,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 8
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__clean",
+      "profile": "clean",
+      "confidence": 0.99,
+      "summary": {
+        "counts": {
+          "correct": 7,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.7777777777777778,
+        "recall": 0.875,
+        "f1": 0.823529411764706,
+        "hallucination_rate": 0.2222222222222222,
+        "quality": 0.7777777777777778,
+        "scored_fields": 9
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Scaling and Polishing; Root Canal Treatment"
+        },
+        {
+          "field": "document_type",
+          "outcome": "wrong",
+          "truth": "HOSPITAL_BILL",
+          "predicted": "DENTAL_REPORT"
+        }
+      ]
+    },
+    {
+      "id": "hospital_bill__combined_heavy",
+      "profile": "combined_heavy",
+      "confidence": 0.3,
+      "summary": {
+        "counts": {
+          "correct": 3,
+          "wrong": 2,
+          "missed": 3,
+          "spurious": 1
+        },
+        "precision": 0.5,
+        "recall": 0.375,
+        "f1": 0.42857142857142855,
+        "hallucination_rate": 0.5,
+        "quality": 0.5,
+        "scored_fields": 9
+      },
+      "mismatches": [
+        {
+          "field": "patient_name",
+          "outcome": "missed",
+          "truth": "Kavita Nair",
+          "predicted": null
+        },
+        {
+          "field": "doctor_name",
+          "outcome": "missed",
+          "truth": "Dr. S. Iyer",
+          "predicted": null
+        },
+        {
+          "field": "date",
+          "outcome": "missed",
+          "truth": "2024-09-20",
+          "predicted": null
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "wrong",
+          "truth": {
+            "description": "ECG",
+            "amount": 450.0
+          },
+          "predicted": {
+            "description": "ECG",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "wrong",
+          "truth": {
+            "description": "Dressing Charges",
+            "amount": 250.0
+          },
+          "predicted": {
+            "description": "Dressing Charges",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Other Charges",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "hospital_bill__combined_moderate",
+      "profile": "combined_moderate",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 9
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__crumple",
+      "profile": "crumple",
+      "confidence": 0.88,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 9
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__glare",
+      "profile": "glare",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 8,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.8,
+        "recall": 0.8888888888888888,
+        "f1": 0.8421052631578948,
+        "hallucination_rate": 0.2,
+        "quality": 0.8,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Scaling and Polishing, Dental X-Ray, Tooth Extraction"
+        },
+        {
+          "field": "document_type",
+          "outcome": "wrong",
+          "truth": "HOSPITAL_BILL",
+          "predicted": "DENTAL_REPORT"
+        }
+      ]
+    },
+    {
+      "id": "hospital_bill__lowres",
+      "profile": "lowres",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 8,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 8
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__noise",
+      "profile": "noise",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 7,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.7777777777777778,
+        "recall": 0.875,
+        "f1": 0.823529411764706,
+        "hallucination_rate": 0.2222222222222222,
+        "quality": 0.7777777777777778,
+        "scored_fields": 9
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Root Canal Treatment, Tooth Extraction"
+        },
+        {
+          "field": "document_type",
+          "outcome": "wrong",
+          "truth": "HOSPITAL_BILL",
+          "predicted": "DENTAL_REPORT"
+        }
+      ]
+    },
+    {
+      "id": "hospital_bill__rotate90",
+      "profile": "rotate90",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 9
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__shadow",
+      "profile": "shadow",
+      "confidence": 0.99,
+      "summary": {
+        "counts": {
+          "correct": 8,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.8,
+        "recall": 0.8888888888888888,
+        "f1": 0.8421052631578948,
+        "hallucination_rate": 0.2,
+        "quality": 0.8,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Root Canal Treatment, Dental X-Ray, Scaling and Polishing"
+        },
+        {
+          "field": "document_type",
+          "outcome": "wrong",
+          "truth": "HOSPITAL_BILL",
+          "predicted": "DENTAL_REPORT"
+        }
+      ]
+    },
+    {
+      "id": "hospital_bill__skew",
+      "profile": "skew",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "hospital_bill__stamp",
+      "profile": "stamp",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 8,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.8,
+        "recall": 0.8888888888888888,
+        "f1": 0.8421052631578948,
+        "hallucination_rate": 0.2,
+        "quality": 0.8,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Dental X-Ray, Root Canal Treatment, Tooth Extraction"
+        },
+        {
+          "field": "document_type",
+          "outcome": "wrong",
+          "truth": "HOSPITAL_BILL",
+          "predicted": "DENTAL_REPORT"
+        }
+      ]
+    },
+    {
+      "id": "lab_report__blur",
+      "profile": "blur",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 2
+        },
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "hallucination_rate": 0.42857142857142855,
+        "quality": 0.5714285714285714,
+        "scored_fields": 7
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. R. Gupta",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/89001/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Fasting Glucose: 82.7 mg/dL (Normal: 70–100); Hemoglobin: 15.4 g/dL (Normal: 13.0–17.0); Platelet Count: 243.2 ×10³/µL (Normal: 150–450). Remarks: Clinical correlation advised."
+        }
+      ]
+    },
+    {
+      "id": "lab_report__clean",
+      "profile": "clean",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 2
+        },
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "hallucination_rate": 0.42857142857142855,
+        "quality": 0.5714285714285714,
+        "scored_fields": 7
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. S. Iyer",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Hemoglobin: 13.2 g/dL (Normal: 13.0–17.0); Fasting Glucose: 86.4 mg/dL (Normal: 70–100); Platelet Count: 311.3 x10^3/uL (Normal: 150–450); WBC Count: 9,971 /uL (Normal: 4,500–11,000); Serum Creatinine: 1.0 mg/dL (Normal: 0.6–1.2)"
+        }
+      ]
+    },
+    {
+      "id": "lab_report__combined_heavy",
+      "profile": "combined_heavy",
+      "confidence": 0.35,
+      "summary": {
+        "counts": {
+          "correct": 2,
+          "wrong": 2,
+          "missed": 1,
+          "spurious": 0
+        },
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.4444444444444445,
+        "hallucination_rate": 0.5,
+        "quality": 0.5,
+        "scored_fields": 5
+      },
+      "mismatches": [
+        {
+          "field": "patient_name",
+          "outcome": "missed",
+          "truth": "Vikram Joshi",
+          "predicted": null
+        },
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Venkat Rao",
+          "predicted": "Dr. Shiju Pillai, MD (Pathology)"
+        },
+        {
+          "field": "date",
+          "outcome": "wrong",
+          "truth": "2024-12-14",
+          "predicted": "2024-12-16"
+        }
+      ]
+    },
+    {
+      "id": "lab_report__combined_moderate",
+      "profile": "combined_moderate",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 5,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 6
+        },
+        "precision": 0.45454545454545453,
+        "recall": 1.0,
+        "f1": 0.625,
+        "hallucination_rate": 0.5454545454545454,
+        "quality": 0.45454545454545453,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "WBC Count, Serum Creatinine, Hemoglobin, Fasting Glucose"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "WBC Count — 8,931 /uL (Normal: 4,500–11,000)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — 1.0 mg/dL (Normal: 0.6–1.2)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — 14.0 g/dL (Normal: 13.0–17.0)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — 98.8 mg/dL (Normal: 70–100)",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__crumple",
+      "profile": "crumple",
+      "confidence": 0.82,
+      "summary": {
+        "counts": {
+          "correct": 5,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 6
+        },
+        "precision": 0.45454545454545453,
+        "recall": 1.0,
+        "f1": 0.625,
+        "hallucination_rate": 0.5454545454545454,
+        "quality": 0.45454545454545453,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KI/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Platelet Count, Serum Creatinine, Hemoglobin, Fasting Glucose"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — Result: 333.1 x10^3/uL (Normal Range: partially legible)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — Result: 0.9 mg/dL (Normal Range: 0.6 - 1.2)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — Result: 15.6 g/dL (Normal Range: 13.0 - 17.0)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — Result: 99.6 mg/dL (Normal Range: 70 - 100)",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__glare",
+      "profile": "glare",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 5
+        },
+        "precision": 0.4,
+        "recall": 0.8,
+        "f1": 0.5333333333333333,
+        "hallucination_rate": 0.6,
+        "quality": 0.4,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. P. Banerjee",
+          "predicted": "Dr. Meena Pillai"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Complete Blood Count (CBC) - WBC Count, Hemoglobin, Platelet Count"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "WBC Count — Result: 5,678 /uL (Normal: 4,500–11,000 /uL)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — Result: 13.3 g/dL (Normal: 13.0–17.0 g/dL)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — Result: 204.0 x10^3/uL (Normal: 150–450 x10^3/uL)",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__lowres",
+      "profile": "lowres",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 7
+        },
+        "precision": 0.3333333333333333,
+        "recall": 0.8,
+        "f1": 0.47058823529411764,
+        "hallucination_rate": 0.6666666666666666,
+        "quality": 0.3333333333333333,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. R. Gupta",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Platelet Count, Serum Creatinine, Hemoglobin, WBC Count, Fasting Glucose"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — Result: 337.9 x10^3/uL (Normal: 150–450)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — Result: 0.8 mg/dL (Normal: 0.6–1.2)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — Result: 14.5 g/dL (Normal: 13.0–17.0)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "WBC Count — Result: 6,385 /uL (Normal: 4,500–11,000)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — Result: 143.2 mg/dL (Normal: 70–100) [HIGH]",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__noise",
+      "profile": "noise",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 6
+        },
+        "precision": 0.36363636363636365,
+        "recall": 0.8,
+        "f1": 0.5000000000000001,
+        "hallucination_rate": 0.6363636363636364,
+        "quality": 0.36363636363636365,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Arun Sharma",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Routine blood investigations; Clinical correlation advised"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — Result: 80.8 mg/dL (Normal: 70–100)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — Result: 0.8 mg/dL (Normal: 0.6–1.2)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — Result: 377.6 x10^3/uL (Normal: 150–450)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — Result: 12.4 g/dL (Normal: 13.0–17.0) [LOW]",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__rotate90",
+      "profile": "rotate90",
+      "confidence": 0.92,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 7
+        },
+        "precision": 0.3333333333333333,
+        "recall": 0.8,
+        "f1": 0.47058823529411764,
+        "hallucination_rate": 0.6666666666666666,
+        "quality": 0.3333333333333333,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Venkat Rao",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Fasting Glucose, WBC Count, Platelet Count, Hemoglobin, Serum Creatinine"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — Result: 134.7 mg/dL (Normal: 70–100)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "WBC Count — Result: 7,803 /uL (Normal: 4,500–11,000)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — Result: 360.5 x10³/uL (Normal: 150–450)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — Result: 15.0 g/dL (Normal: 13.0–17.0)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — Result: 1.3 mg/dL (Normal: 0.6–1.2)",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lab_report__shadow",
+      "profile": "shadow",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 2
+        },
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "hallucination_rate": 0.42857142857142855,
+        "quality": 0.5714285714285714,
+        "scored_fields": 7
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. P. Banerjee",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Fasting Glucose: 106.1 mg/dL (Normal: 70–100); Serum Creatinine: 1.2 mg/dL (Normal: 0.6–1.2); WBC Count: 9,253 /uL (Normal: 4,500–11,000). Remarks: Clinical correlation advised."
+        }
+      ]
+    },
+    {
+      "id": "lab_report__skew",
+      "profile": "skew",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 2
+        },
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "hallucination_rate": 0.42857142857142855,
+        "quality": 0.5714285714285714,
+        "scored_fields": 7
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Arun Sharma",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Serum Creatinine: 0.9 mg/dL (Normal: 0.6–1.2); Platelet Count: 184.9 x10^3/uL (Normal: 150–450); WBC Count: 10,797 /uL (Normal: 4,500–11,000). Remarks: Clinical correlation advised."
+        }
+      ]
+    },
+    {
+      "id": "lab_report__stamp",
+      "profile": "stamp",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 4,
+          "wrong": 1,
+          "missed": 0,
+          "spurious": 7
+        },
+        "precision": 0.3333333333333333,
+        "recall": 0.8,
+        "f1": 0.47058823529411764,
+        "hallucination_rate": 0.6666666666666666,
+        "quality": 0.3333333333333333,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Arun Sharma",
+          "predicted": "Dr. Meena Pillai, MD (Pathology)"
+        },
+        {
+          "field": "doctor_registration",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "KL/78901/2012"
+        },
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "WBC Count, Platelet Count, Fasting Glucose, Hemoglobin, Serum Creatinine"
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "WBC Count — 6,783 /uL (Normal: 4,500–11,000)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Platelet Count — 344.2 x10^3/uL (Normal: 150–450)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Fasting Glucose — 126.5 mg/dL (Normal: 70–100) ⚠️ HIGH",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Hemoglobin — 14.1 g/dL (Normal: 13.0–17.0)",
+            "amount": 0
+          }
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": {
+            "description": "Serum Creatinine — 0.9 mg/dL (Normal: 0.6–1.2)",
+            "amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pharmacy_bill__blur",
+      "profile": "blur",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__clean",
+      "profile": "clean",
+      "confidence": 0.99,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__combined_heavy",
+      "profile": "combined_heavy",
+      "confidence": 0.3,
+      "summary": {
+        "counts": {
+          "correct": 3,
+          "wrong": 2,
+          "missed": 5,
+          "spurious": 0
+        },
+        "precision": 0.6,
+        "recall": 0.3,
+        "f1": 0.4,
+        "hallucination_rate": 0.4,
+        "quality": 0.55,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "patient_name",
+          "outcome": "missed",
+          "truth": "Arjun Mehta",
+          "predicted": null
+        },
+        {
+          "field": "doctor_name",
+          "outcome": "wrong",
+          "truth": "Dr. Arun Sharma",
+          "predicted": "Dr. G.K. Poon Sharma"
+        },
+        {
+          "field": "total",
+          "outcome": "wrong",
+          "truth": 69.0,
+          "predicted": 5.0
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "missed",
+          "truth": "Vitamin C 500mg",
+          "predicted": null
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "missed",
+          "truth": "Ibuprofen 400mg",
+          "predicted": null
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "missed",
+          "truth": {
+            "description": "Vitamin C 500mg",
+            "amount": 20.0
+          },
+          "predicted": null
+        },
+        {
+          "field": "line_items[]",
+          "outcome": "missed",
+          "truth": {
+            "description": "Ibuprofen 400mg",
+            "amount": 49.0
+          },
+          "predicted": null
+        }
+      ]
+    },
+    {
+      "id": "pharmacy_bill__combined_moderate",
+      "profile": "combined_moderate",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 14,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 14
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__crumple",
+      "profile": "crumple",
+      "confidence": 0.82,
+      "summary": {
+        "counts": {
+          "correct": 14,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 14
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__glare",
+      "profile": "glare",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__lowres",
+      "profile": "lowres",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__noise",
+      "profile": "noise",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 12,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 12
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__rotate90",
+      "profile": "rotate90",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__shadow",
+      "profile": "shadow",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 14,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 14
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__skew",
+      "profile": "skew",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "pharmacy_bill__stamp",
+      "profile": "stamp",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 0
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "hallucination_rate": 0.0,
+        "quality": 1.0,
+        "scored_fields": 10
+      },
+      "mismatches": []
+    },
+    {
+      "id": "prescription__blur",
+      "profile": "blur",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "hallucination_rate": 0.09090909090909091,
+        "quality": 0.9090909090909091,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__clean",
+      "profile": "clean",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 11,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9166666666666666,
+        "recall": 1.0,
+        "f1": 0.9565217391304348,
+        "hallucination_rate": 0.08333333333333333,
+        "quality": 0.9166666666666666,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__combined_heavy",
+      "profile": "combined_heavy",
+      "confidence": 0.55,
+      "summary": {
+        "counts": {
+          "correct": 6,
+          "wrong": 1,
+          "missed": 4,
+          "spurious": 3
+        },
+        "precision": 0.6,
+        "recall": 0.5454545454545454,
+        "f1": 0.5714285714285713,
+        "hallucination_rate": 0.4,
+        "quality": 0.5714285714285714,
+        "scored_fields": 14
+      },
+      "mismatches": [
+        {
+          "field": "doctor_registration",
+          "outcome": "missed",
+          "truth": "KL/78901/2012",
+          "predicted": null
+        },
+        {
+          "field": "date",
+          "outcome": "wrong",
+          "truth": "2024-08-28",
+          "predicted": "2024-08-26"
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "missed",
+          "truth": "Salbutamol Inhaler",
+          "predicted": null
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "missed",
+          "truth": "Paracetamol 650mg",
+          "predicted": null
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "missed",
+          "truth": "Amoxicillin 500mg",
+          "predicted": null
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Telma/Telmisartan (dosage partially illegible)"
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Pantoprazole/Pantoprazol (dosage illegible)"
+        },
+        {
+          "field": "medicines[]",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Aspirin/Rosuvastatin 10mg (partially illegible)"
+        }
+      ]
+    },
+    {
+      "id": "prescription__combined_moderate",
+      "profile": "combined_moderate",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__crumple",
+      "profile": "crumple",
+      "confidence": 0.82,
+      "summary": {
+        "counts": {
+          "correct": 11,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9166666666666666,
+        "recall": 1.0,
+        "f1": 0.9565217391304348,
+        "hallucination_rate": 0.08333333333333333,
+        "quality": 0.9166666666666666,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__glare",
+      "profile": "glare",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__lowres",
+      "profile": "lowres",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "hallucination_rate": 0.09090909090909091,
+        "quality": 0.9090909090909091,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__noise",
+      "profile": "noise",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__rotate90",
+      "profile": "rotate90",
+      "confidence": 0.98,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__shadow",
+      "profile": "shadow",
+      "confidence": 0.95,
+      "summary": {
+        "counts": {
+          "correct": 11,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9166666666666666,
+        "recall": 1.0,
+        "f1": 0.9565217391304348,
+        "hallucination_rate": 0.08333333333333333,
+        "quality": 0.9166666666666666,
+        "scored_fields": 12
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__skew",
+      "profile": "skew",
+      "confidence": 0.97,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "hallucination_rate": 0.09090909090909091,
+        "quality": 0.9090909090909091,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription__stamp",
+      "profile": "stamp",
+      "confidence": 0.82,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "hallucination_rate": 0.09090909090909091,
+        "quality": 0.9090909090909091,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription_hw__blur",
+      "profile": "handwritten_blur",
+      "confidence": 0.95,
+      "summary": {
+        "counts": {
+          "correct": 10,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1": 0.9523809523809523,
+        "hallucination_rate": 0.09090909090909091,
+        "quality": 0.9090909090909091,
+        "scored_fields": 11
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription_hw__clean",
+      "profile": "handwritten",
+      "confidence": 0.82,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    },
+    {
+      "id": "prescription_hw__skew",
+      "profile": "handwritten_skew",
+      "confidence": 0.95,
+      "summary": {
+        "counts": {
+          "correct": 9,
+          "wrong": 0,
+          "missed": 0,
+          "spurious": 1
+        },
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526316,
+        "hallucination_rate": 0.1,
+        "quality": 0.9,
+        "scored_fields": 10
+      },
+      "mismatches": [
+        {
+          "field": "treatment",
+          "outcome": "spurious",
+          "truth": null,
+          "predicted": "Rest, plenty of fluids. Review after 5 days."
+        }
+      ]
+    }
+  ]
+}

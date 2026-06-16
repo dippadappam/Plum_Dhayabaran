@@ -1,0 +1,17 @@
+{
+  "profile": "handwritten_blur",
+  "applied": [
+    {
+      "name": "handwriting_font",
+      "severity": 1.0,
+      "params": {}
+    },
+    {
+      "name": "blur",
+      "severity": 0.5,
+      "params": {
+        "radius": 2.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Arjun Mehta",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": null,
+  "hospital_name": "Smile Dental Clinic",
+  "date": "2024-04-18",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Scaling and Polishing",
+      "amount": 950.0
+    },
+    {
+      "description": "Dental X-Ray",
+      "amount": 250.0
+    },
+    {
+      "description": "Tooth Extraction",
+      "amount": 1000.0
+    }
+  ],
+  "total": 2200.0
+}

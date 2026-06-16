@@ -1,0 +1,12 @@
+{
+  "profile": "blur",
+  "applied": [
+    {
+      "name": "blur",
+      "severity": 0.5,
+      "params": {
+        "radius": 2.0
+      }
+    }
+  ]
+}

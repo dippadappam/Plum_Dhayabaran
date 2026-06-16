@@ -1,0 +1,36 @@
+{
+  "profile": "combined_moderate",
+  "applied": [
+    {
+      "name": "skew",
+      "severity": 0.3,
+      "params": {
+        "angle_deg": 2.89
+      }
+    },
+    {
+      "name": "shadow",
+      "severity": 0.3,
+      "params": {
+        "strength": 0.42
+      }
+    },
+    {
+      "name": "noise",
+      "severity": 0.3,
+      "params": {
+        "sigma": 37.0
+      }
+    },
+    {
+      "name": "signature",
+      "severity": 0.3,
+      "params": {
+        "at": [
+          551,
+          968
+        ]
+      }
+    }
+  ]
+}

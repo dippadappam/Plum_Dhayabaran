@@ -1,0 +1,20 @@
+{
+  "bundle_id": "neg_over_cap",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "neg_over_cap:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "neg_over_cap:bill"
+    }
+  ],
+  "expected": {
+    "decision": "REJECTED",
+    "category": "CONSULTATION",
+    "rejection_reason": "PER_CLAIM_EXCEEDED"
+  }
+}

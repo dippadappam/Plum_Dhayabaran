@@ -1,0 +1,12 @@
+{
+  "profile": "skew",
+  "applied": [
+    {
+      "name": "skew",
+      "severity": 0.5,
+      "params": {
+        "angle_deg": -3.08
+      }
+    }
+  ]
+}

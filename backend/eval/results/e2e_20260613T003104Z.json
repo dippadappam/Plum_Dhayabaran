@@ -1,0 +1,148 @@
+{
+  "kind": "e2e",
+  "generated": "2026-06-13T00:31:04.128141+00:00",
+  "passed": 5,
+  "total": 6,
+  "bundles": [
+    {
+      "bundle": "clean_consult",
+      "outcome": "APPROVED",
+      "approved_amount": 1350.0,
+      "category": "CONSULTATION",
+      "confidence": 0.9,
+      "passed": true,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": true,
+          "detail": "APPROVED == APPROVED"
+        },
+        {
+          "check": "amount",
+          "ok": true,
+          "detail": "1350.0 ~= 1350"
+        },
+        {
+          "check": "category",
+          "ok": true,
+          "detail": "CONSULTATION == CONSULTATION"
+        }
+      ]
+    },
+    {
+      "bundle": "dental_partial",
+      "outcome": "NEEDS_RESUBMISSION",
+      "approved_amount": null,
+      "category": "DENTAL",
+      "confidence": 0.93,
+      "passed": false,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": false,
+          "detail": "NEEDS_RESUBMISSION == PARTIAL"
+        },
+        {
+          "check": "amount",
+          "ok": false,
+          "detail": "None ~= 8000"
+        },
+        {
+          "check": "category",
+          "ok": true,
+          "detail": "DENTAL == DENTAL"
+        }
+      ]
+    },
+    {
+      "bundle": "excluded_obesity",
+      "outcome": "REJECTED",
+      "approved_amount": 0,
+      "category": "CONSULTATION",
+      "confidence": 0.94,
+      "passed": true,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": true,
+          "detail": "REJECTED == REJECTED"
+        },
+        {
+          "check": "category",
+          "ok": true,
+          "detail": "CONSULTATION == CONSULTATION"
+        },
+        {
+          "check": "reason",
+          "ok": true,
+          "detail": "EXCLUDED_CONDITION in ['EXCLUDED_CONDITION']"
+        }
+      ]
+    },
+    {
+      "bundle": "network_discount",
+      "outcome": "APPROVED",
+      "approved_amount": 2160.0,
+      "category": "CONSULTATION",
+      "confidence": 0.94,
+      "passed": true,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": true,
+          "detail": "APPROVED == APPROVED"
+        },
+        {
+          "check": "amount",
+          "ok": true,
+          "detail": "2160.0 ~= 2160"
+        },
+        {
+          "check": "category",
+          "ok": true,
+          "detail": "CONSULTATION == CONSULTATION"
+        }
+      ]
+    },
+    {
+      "bundle": "unreadable_bill",
+      "outcome": "NEEDS_RESUBMISSION",
+      "approved_amount": null,
+      "category": "CONSULTATION",
+      "confidence": 0.67,
+      "passed": true,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": true,
+          "detail": "NEEDS_RESUBMISSION in ['NEEDS_RESUBMISSION', 'MANUAL_REVIEW']"
+        }
+      ]
+    },
+    {
+      "bundle": "waiting_diabetes",
+      "outcome": "REJECTED",
+      "approved_amount": 0,
+      "category": "CONSULTATION",
+      "confidence": 0.93,
+      "passed": true,
+      "checks": [
+        {
+          "check": "decision",
+          "ok": true,
+          "detail": "REJECTED == REJECTED"
+        },
+        {
+          "check": "category",
+          "ok": true,
+          "detail": "CONSULTATION == CONSULTATION"
+        },
+        {
+          "check": "reason",
+          "ok": true,
+          "detail": "WAITING_PERIOD in ['WAITING_PERIOD']"
+        }
+      ]
+    }
+  ]
+}

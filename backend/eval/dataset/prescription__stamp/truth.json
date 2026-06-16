@@ -1,0 +1,17 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Sneha Reddy",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": "KL/78901/2012",
+  "hospital_name": "Sunrise Clinic, Pune",
+  "date": "2024-09-18",
+  "diagnosis": "Acute Bronchitis",
+  "treatment": null,
+  "medicines": [
+    "Amoxicillin 500mg",
+    "Paracetamol 650mg",
+    "ORS Sachet"
+  ],
+  "line_items": [],
+  "total": null
+}

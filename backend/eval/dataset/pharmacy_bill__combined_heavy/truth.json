@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Arjun Mehta",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-09-13",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Vitamin C 500mg",
+    "Ibuprofen 400mg"
+  ],
+  "line_items": [
+    {
+      "description": "Vitamin C 500mg",
+      "amount": 20.0
+    },
+    {
+      "description": "Ibuprofen 400mg",
+      "amount": 49.0
+    }
+  ],
+  "total": 69.0
+}

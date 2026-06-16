@@ -1,0 +1,26 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Priya Singh",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Apollo Hospitals",
+  "date": "2024-12-16",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Urine Routine",
+      "amount": 120.0
+    },
+    {
+      "description": "Consultation Fee",
+      "amount": 1600.0
+    },
+    {
+      "description": "ECG",
+      "amount": 300.0
+    }
+  ],
+  "total": 2020.0
+}

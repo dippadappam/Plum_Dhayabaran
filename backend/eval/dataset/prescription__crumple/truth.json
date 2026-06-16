@@ -1,0 +1,18 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": "AP/67890/2017",
+  "hospital_name": "Wellness Care Clinic",
+  "date": "2024-11-13",
+  "diagnosis": "Hypertension",
+  "treatment": null,
+  "medicines": [
+    "Azithromycin 500mg",
+    "ORS Sachet",
+    "Pantoprazole 40mg",
+    "Paracetamol 650mg"
+  ],
+  "line_items": [],
+  "total": null
+}

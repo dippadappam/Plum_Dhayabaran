@@ -1,0 +1,16 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Suresh Patil",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": "WB/34567/2015",
+  "hospital_name": "Green Valley Hospital, Chennai",
+  "date": "2024-08-16",
+  "diagnosis": "Acute Bronchitis",
+  "treatment": null,
+  "medicines": [
+    "Metformin 500mg",
+    "Amoxicillin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

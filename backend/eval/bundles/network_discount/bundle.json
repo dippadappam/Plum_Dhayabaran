@@ -1,0 +1,20 @@
+{
+  "bundle_id": "network_discount",
+  "member_id": "EMP010",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "network_discount:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "network_discount:bill"
+    }
+  ],
+  "expected": {
+    "decision": "APPROVED",
+    "approved_amount": 2160,
+    "category": "CONSULTATION"
+  }
+}

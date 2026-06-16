@@ -1,0 +1,21 @@
+{
+  "bundle_id": "dependent_consultation",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "dependent_consultation:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "dependent_consultation:bill"
+    }
+  ],
+  "expected": {
+    "decision": "APPROVED",
+    "approved_amount": 1170,
+    "category": "CONSULTATION"
+  },
+  "expected_math": "Patient Sunita Kumar is DEP001 (SPOUSE), a rostered dependent of the filer EMP001, so the directional-dependent identity check passes. Consultation, City Medical Centre (off-network). Eligible = 1000 + 300 = 1300. No network discount. Co-pay 10%: 1300 x 0.90 = 1170. Within the consultation per-claim cap max(5000, 2000) = 5000. Expected APPROVED 1170. Already green today -> positive control for dependent handling."
+}

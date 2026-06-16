@@ -1,0 +1,22 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Meena Iyer",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": null,
+  "hospital_name": "Smile Dental Clinic",
+  "date": "2024-04-25",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Scaling and Polishing",
+      "amount": 900.0
+    },
+    {
+      "description": "Root Canal Treatment",
+      "amount": 6500.0
+    }
+  ],
+  "total": 7400.0
+}

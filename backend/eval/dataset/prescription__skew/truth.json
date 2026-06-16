@@ -1,0 +1,17 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": "WB/34567/2015",
+  "hospital_name": "Sunrise Clinic, Pune",
+  "date": "2024-12-28",
+  "diagnosis": "Migraine",
+  "treatment": null,
+  "medicines": [
+    "Pantoprazole 40mg",
+    "ORS Sachet",
+    "Ibuprofen 400mg"
+  ],
+  "line_items": [],
+  "total": null
+}

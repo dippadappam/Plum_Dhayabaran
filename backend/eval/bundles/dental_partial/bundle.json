@@ -1,0 +1,16 @@
+{
+  "bundle_id": "dental_partial",
+  "member_id": "EMP002",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "bill.png",
+      "file_id": "dental_partial:bill"
+    }
+  ],
+  "expected": {
+    "decision": "PARTIAL",
+    "approved_amount": 8000,
+    "category": "DENTAL"
+  }
+}

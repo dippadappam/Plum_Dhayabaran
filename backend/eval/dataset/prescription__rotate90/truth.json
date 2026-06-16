@@ -1,0 +1,16 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Amit Verma",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": "WB/34567/2015",
+  "hospital_name": "City Medical Centre, Bengaluru",
+  "date": "2024-08-20",
+  "diagnosis": "Hypertension",
+  "treatment": null,
+  "medicines": [
+    "Vitamin C 500mg",
+    "Pantoprazole 40mg"
+  ],
+  "line_items": [],
+  "total": null
+}

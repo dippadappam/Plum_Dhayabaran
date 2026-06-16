@@ -1,0 +1,13 @@
+{
+  "document_type": "LAB_REPORT",
+  "patient_name": "Amit Verma",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Metropolis Labs",
+  "date": "2024-09-27",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [],
+  "total": null
+}

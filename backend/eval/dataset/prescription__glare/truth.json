@@ -1,0 +1,16 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Meena Iyer",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": "AP/67890/2017",
+  "hospital_name": "Fortis Healthcare",
+  "date": "2024-05-19",
+  "diagnosis": "Lumbar Spondylosis",
+  "treatment": null,
+  "medicines": [
+    "Amoxicillin 500mg",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

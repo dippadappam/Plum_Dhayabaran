@@ -1,0 +1,22 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Kavita Nair",
+  "doctor_name": "Dr. S. Iyer",
+  "doctor_registration": null,
+  "hospital_name": "Apollo Hospitals",
+  "date": "2024-09-20",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "ECG",
+      "amount": 450.0
+    },
+    {
+      "description": "Dressing Charges",
+      "amount": 250.0
+    }
+  ],
+  "total": 700.0
+}

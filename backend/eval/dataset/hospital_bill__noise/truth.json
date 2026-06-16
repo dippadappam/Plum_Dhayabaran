@@ -1,0 +1,22 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Meena Iyer",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": null,
+  "hospital_name": "Smile Dental Clinic",
+  "date": "2024-05-25",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "Root Canal Treatment",
+      "amount": 8050.0
+    },
+    {
+      "description": "Tooth Extraction",
+      "amount": 950.0
+    }
+  ],
+  "total": 9000.0
+}

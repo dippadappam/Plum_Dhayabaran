@@ -1,0 +1,13 @@
+{
+  "document_type": "LAB_REPORT",
+  "patient_name": "Sneha Reddy",
+  "doctor_name": "Dr. R. Gupta",
+  "doctor_registration": null,
+  "hospital_name": "SRL Diagnostics",
+  "date": "2024-10-24",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [],
+  "total": null
+}

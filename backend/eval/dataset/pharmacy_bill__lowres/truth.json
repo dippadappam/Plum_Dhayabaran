@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Anita Desai",
+  "doctor_name": "Dr. Arun Sharma",
+  "doctor_registration": null,
+  "hospital_name": "Health First Pharmacy",
+  "date": "2024-06-18",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "ORS Sachet",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [
+    {
+      "description": "ORS Sachet",
+      "amount": 147.0
+    },
+    {
+      "description": "Azithromycin 500mg",
+      "amount": 90.0
+    }
+  ],
+  "total": 237.0
+}

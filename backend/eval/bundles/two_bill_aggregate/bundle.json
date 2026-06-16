@@ -1,0 +1,25 @@
+{
+  "bundle_id": "two_bill_aggregate",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "two_bill_aggregate:prescription"
+    },
+    {
+      "file": "bill1.png",
+      "file_id": "two_bill_aggregate:bill1"
+    },
+    {
+      "file": "bill2.png",
+      "file_id": "two_bill_aggregate:bill2"
+    }
+  ],
+  "expected": {
+    "decision": "APPROVED",
+    "approved_amount": 2160,
+    "category": "CONSULTATION"
+  },
+  "expected_math": "Two single-line consultation bills in one submission, 1500 each, both at Apollo Hospitals (network). Batch 6a multi-bill aggregation sums line items across both bills: eligible = 1500 + 1500 = 3000 (each line < 2000 consultation per-line cap; total < 5000 per-claim cap). Network discount 20% -> 2400. Co-pay 10% -> 2160. APPROVED 2160 (regular green bundle now that aggregation has landed in 6a)."
+}

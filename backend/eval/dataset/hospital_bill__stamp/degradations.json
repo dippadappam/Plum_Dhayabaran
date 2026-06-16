@@ -1,0 +1,16 @@
+{
+  "profile": "stamp",
+  "applied": [
+    {
+      "name": "stamp",
+      "severity": 0.5,
+      "params": {
+        "text": "PAID",
+        "center": [
+          282,
+          518
+        ]
+      }
+    }
+  ]
+}

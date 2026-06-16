@@ -1,0 +1,18 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": "WB/34567/2015",
+  "hospital_name": "Sunrise Clinic, Pune",
+  "date": "2024-10-14",
+  "diagnosis": "Lumbar Spondylosis",
+  "treatment": null,
+  "medicines": [
+    "Salbutamol Inhaler",
+    "Cetirizine 10mg",
+    "ORS Sachet",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

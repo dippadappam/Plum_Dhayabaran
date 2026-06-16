@@ -1,0 +1,18 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Meena Iyer",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": "KL/78901/2012",
+  "hospital_name": "City Medical Centre, Bengaluru",
+  "date": "2024-08-28",
+  "diagnosis": "Hypertension",
+  "treatment": null,
+  "medicines": [
+    "Salbutamol Inhaler",
+    "Metformin 500mg",
+    "Paracetamol 650mg",
+    "Amoxicillin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

@@ -1,0 +1,10 @@
+{
+  "profile": "handwritten",
+  "applied": [
+    {
+      "name": "handwriting_font",
+      "severity": 1.0,
+      "params": {}
+    }
+  ]
+}

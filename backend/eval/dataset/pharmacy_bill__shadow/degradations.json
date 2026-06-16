@@ -1,0 +1,12 @@
+{
+  "profile": "shadow",
+  "applied": [
+    {
+      "name": "shadow",
+      "severity": 0.5,
+      "params": {
+        "strength": 0.47
+      }
+    }
+  ]
+}

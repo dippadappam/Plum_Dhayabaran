@@ -1,0 +1,22 @@
+{
+  "bundle_id": "unreadable_bill",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "unreadable_bill:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "unreadable_bill:bill"
+    }
+  ],
+  "expected": {
+    "decision_any": [
+      "NEEDS_RESUBMISSION",
+      "MANUAL_REVIEW"
+    ],
+    "note": "Heavily blurred bill: acceptable outcomes are a re-upload request or manual review; a clean auto-approval is a fail."
+  }
+}

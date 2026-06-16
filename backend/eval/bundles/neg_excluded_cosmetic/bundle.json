@@ -1,0 +1,16 @@
+{
+  "bundle_id": "neg_excluded_cosmetic",
+  "member_id": "EMP002",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "bill.png",
+      "file_id": "neg_excluded_cosmetic:bill"
+    }
+  ],
+  "expected": {
+    "decision": "REJECTED",
+    "category": "DENTAL",
+    "rejection_reason": "EXCLUDED_CONDITION"
+  }
+}

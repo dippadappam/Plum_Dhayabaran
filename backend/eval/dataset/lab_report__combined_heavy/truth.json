@@ -1,0 +1,13 @@
+{
+  "document_type": "LAB_REPORT",
+  "patient_name": "Vikram Joshi",
+  "doctor_name": "Dr. Venkat Rao",
+  "doctor_registration": null,
+  "hospital_name": "Precision Diagnostics Pvt Ltd",
+  "date": "2024-12-14",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [],
+  "total": null
+}

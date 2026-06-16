@@ -1,0 +1,12 @@
+{
+  "profile": "lowres",
+  "applied": [
+    {
+      "name": "lowres",
+      "severity": 0.5,
+      "params": {
+        "scale": 0.39
+      }
+    }
+  ]
+}

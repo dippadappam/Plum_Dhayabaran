@@ -1,0 +1,25 @@
+{
+  "document_type": "PHARMACY_BILL",
+  "patient_name": "Vikram Joshi",
+  "doctor_name": "Dr. P. Banerjee",
+  "doctor_registration": null,
+  "hospital_name": "MedPlus Chemists",
+  "date": "2024-06-25",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [
+    "Azithromycin 500mg",
+    "Salbutamol Inhaler"
+  ],
+  "line_items": [
+    {
+      "description": "Azithromycin 500mg",
+      "amount": 252.0
+    },
+    {
+      "description": "Salbutamol Inhaler",
+      "amount": 2475.0
+    }
+  ],
+  "total": 2727.0
+}

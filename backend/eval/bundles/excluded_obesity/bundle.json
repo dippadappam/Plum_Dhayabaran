@@ -1,0 +1,20 @@
+{
+  "bundle_id": "excluded_obesity",
+  "member_id": "EMP009",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "excluded_obesity:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "excluded_obesity:bill"
+    }
+  ],
+  "expected": {
+    "decision": "REJECTED",
+    "category": "CONSULTATION",
+    "rejection_reason": "EXCLUDED_CONDITION"
+  }
+}

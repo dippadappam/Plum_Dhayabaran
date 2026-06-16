@@ -1,0 +1,12 @@
+{
+  "profile": "crumple",
+  "applied": [
+    {
+      "name": "crumple",
+      "severity": 0.5,
+      "params": {
+        "jitter_px": 8
+      }
+    }
+  ]
+}

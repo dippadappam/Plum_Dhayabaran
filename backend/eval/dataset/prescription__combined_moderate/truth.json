@@ -1,0 +1,16 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Vikram Joshi",
+  "doctor_name": "Dr. R. Gupta",
+  "doctor_registration": "DL/34567/2016",
+  "hospital_name": "Fortis Healthcare",
+  "date": "2024-07-25",
+  "diagnosis": "Acute Bronchitis",
+  "treatment": null,
+  "medicines": [
+    "Cetirizine 10mg",
+    "Azithromycin 500mg"
+  ],
+  "line_items": [],
+  "total": null
+}

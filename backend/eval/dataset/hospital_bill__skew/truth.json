@@ -1,0 +1,30 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Amit Verma",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": null,
+  "hospital_name": "Apollo Hospitals",
+  "date": "2024-05-18",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "ECG",
+      "amount": 300.0
+    },
+    {
+      "description": "Dressing Charges",
+      "amount": 250.0
+    },
+    {
+      "description": "Urine Routine",
+      "amount": 220.0
+    },
+    {
+      "description": "Dengue NS1 Test",
+      "amount": 300.0
+    }
+  ],
+  "total": 1070.0
+}

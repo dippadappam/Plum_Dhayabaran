@@ -1,0 +1,18 @@
+{
+  "document_type": "PRESCRIPTION",
+  "patient_name": "Anita Desai",
+  "doctor_name": "Dr. S. Iyer",
+  "doctor_registration": "TN/56789/2013",
+  "hospital_name": "Wellness Care Clinic",
+  "date": "2024-11-17",
+  "diagnosis": "Gastroenteritis",
+  "treatment": null,
+  "medicines": [
+    "Amoxicillin 500mg",
+    "Cetirizine 10mg",
+    "Pantoprazole 40mg",
+    "Salbutamol Inhaler"
+  ],
+  "line_items": [],
+  "total": null
+}

@@ -1,0 +1,17 @@
+{
+  "profile": "handwritten_skew",
+  "applied": [
+    {
+      "name": "handwriting_font",
+      "severity": 1.0,
+      "params": {}
+    },
+    {
+      "name": "skew",
+      "severity": 0.5,
+      "params": {
+        "angle_deg": 4.25
+      }
+    }
+  ]
+}

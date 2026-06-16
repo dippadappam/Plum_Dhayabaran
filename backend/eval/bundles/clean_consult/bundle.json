@@ -1,0 +1,20 @@
+{
+  "bundle_id": "clean_consult",
+  "member_id": "EMP001",
+  "policy_id": "PLUM_GHI_2024",
+  "documents": [
+    {
+      "file": "prescription.png",
+      "file_id": "clean_consult:prescription"
+    },
+    {
+      "file": "bill.png",
+      "file_id": "clean_consult:bill"
+    }
+  ],
+  "expected": {
+    "decision": "APPROVED",
+    "approved_amount": 1350,
+    "category": "CONSULTATION"
+  }
+}

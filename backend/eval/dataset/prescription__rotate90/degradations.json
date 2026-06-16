@@ -1,0 +1,12 @@
+{
+  "profile": "rotate90",
+  "applied": [
+    {
+      "name": "rotate90",
+      "severity": 0.5,
+      "params": {
+        "angle": 270
+      }
+    }
+  ]
+}

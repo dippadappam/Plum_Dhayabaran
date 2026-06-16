@@ -1,0 +1,26 @@
+{
+  "document_type": "HOSPITAL_BILL",
+  "patient_name": "Farhan Ali",
+  "doctor_name": "Dr. Meena Pillai",
+  "doctor_registration": null,
+  "hospital_name": "City Medical Centre, Bengaluru",
+  "date": "2024-06-13",
+  "diagnosis": null,
+  "treatment": null,
+  "medicines": [],
+  "line_items": [
+    {
+      "description": "X-Ray Chest PA",
+      "amount": 500.0
+    },
+    {
+      "description": "Dressing Charges",
+      "amount": 300.0
+    },
+    {
+      "description": "Urine Routine",
+      "amount": 170.0
+    }
+  ],
+  "total": 970.0
+}

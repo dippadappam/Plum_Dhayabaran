@@ -1,0 +1,51 @@
+{
+  "profile": "combined_heavy",
+  "applied": [
+    {
+      "name": "skew",
+      "severity": 0.8,
+      "params": {
+        "angle_deg": 4.8
+      }
+    },
+    {
+      "name": "blur",
+      "severity": 0.8,
+      "params": {
+        "radius": 2.36
+      }
+    },
+    {
+      "name": "shadow",
+      "severity": 0.8,
+      "params": {
+        "strength": 0.55
+      }
+    },
+    {
+      "name": "glare",
+      "severity": 0.8,
+      "params": {
+        "center": [
+          237,
+          511
+        ],
+        "radius": 372
+      }
+    },
+    {
+      "name": "noise",
+      "severity": 0.8,
+      "params": {
+        "sigma": 52.0
+      }
+    },
+    {
+      "name": "crumple",
+      "severity": 0.8,
+      "params": {
+        "jitter_px": 9
+      }
+    }
+  ]
+}

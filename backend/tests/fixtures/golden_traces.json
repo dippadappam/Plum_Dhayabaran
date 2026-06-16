@@ -1,0 +1,2370 @@
+{
+  "TC001": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP001, claimed ₹1,500.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP001 (Rajesh Kumar) found on roster.",
+      "data": {
+        "member_name": "Rajesh Kumar",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹1,500 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F001",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for PRESCRIPTION (F001); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F002",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for PRESCRIPTION (F002); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 0 of 2 documents; extraction confidence 0.50.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "FAILED",
+      "detail": "For a CONSULTATION claim, you uploaded PRESCRIPTION (dr_sharma_prescription.jpg), PRESCRIPTION (another_prescription.jpg). A HOSPITAL_BILL is required, but you uploaded 2 documents of type PRESCRIPTION instead. Please upload the missing HOSPITAL_BILL.",
+      "data": {
+        "missing_type": "HOSPITAL_BILL",
+        "provided": [
+          "PRESCRIPTION",
+          "PRESCRIPTION"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "FAILED",
+      "detail": "1 document problem(s) found. Stopped before any claim decision; member asked to fix and resubmit.",
+      "data": {
+        "issue_codes": [
+          "WRONG_TYPE"
+        ]
+      }
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:derivation",
+      "status": "SKIPPED",
+      "detail": "Stage 'derivation' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:consistency",
+      "status": "SKIPPED",
+      "detail": "Stage 'consistency' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:adjudication",
+      "status": "SKIPPED",
+      "detail": "Stage 'adjudication' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: NONE (resubmission needed); approved ₹0; confidence 0.47.",
+      "data": {}
+    }
+  ],
+  "TC002": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: PHARMACY for member EMP004, claimed ₹800.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP004 (Sneha Reddy) found on roster.",
+      "data": {
+        "member_name": "Sneha Reddy",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'PHARMACY' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹800 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F003",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for PRESCRIPTION (F003); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F004",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for PHARMACY_BILL (F004); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 0 of 2 documents; extraction confidence 0.50.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for PHARMACY are present: PRESCRIPTION, PHARMACY_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "PHARMACY_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "PHARMACY_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "FAILED",
+      "detail": "The PHARMACY_BILL (blurry_bill.jpg) could not be read because the image is unreadable. Please re-upload a clear photo of this specific document. The claim has not been rejected; it will be processed once a readable copy is received.",
+      "data": {
+        "file_id": "F004",
+        "document_type": "PHARMACY_BILL"
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "FAILED",
+      "detail": "1 document problem(s) found. Stopped before any claim decision; member asked to fix and resubmit.",
+      "data": {
+        "issue_codes": [
+          "UNREADABLE"
+        ]
+      }
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:derivation",
+      "status": "SKIPPED",
+      "detail": "Stage 'derivation' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:consistency",
+      "status": "SKIPPED",
+      "detail": "Stage 'consistency' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:adjudication",
+      "status": "SKIPPED",
+      "detail": "Stage 'adjudication' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: NONE (resubmission needed); approved ₹0; confidence 0.47.",
+      "data": {}
+    }
+  ],
+  "TC003": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP001, claimed ₹1,500.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP001 (Rajesh Kumar) found on roster.",
+      "data": {
+        "member_name": "Rajesh Kumar",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹1,500 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F005",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for PRESCRIPTION (F005); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F006",
+      "status": "SKIPPED",
+      "detail": "No structured content or file data for HOSPITAL_BILL (F006); nothing to extract.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 0 of 2 documents; extraction confidence 0.50.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "FAILED",
+      "detail": "The documents in this claim belong to different patients: PRESCRIPTION (prescription_rajesh.jpg) is for 'Rajesh Kumar'; HOSPITAL_BILL (bill_arjun.jpg) is for 'Arjun Mehta'. All documents in one claim must be for the same patient. Please resubmit with documents for a single patient.",
+      "data": {
+        "names_found": [
+          "Rajesh Kumar",
+          "Arjun Mehta"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "FAILED",
+      "detail": "1 document problem(s) found. Stopped before any claim decision; member asked to fix and resubmit.",
+      "data": {
+        "issue_codes": [
+          "PATIENT_MISMATCH"
+        ]
+      }
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:derivation",
+      "status": "SKIPPED",
+      "detail": "Stage 'derivation' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:consistency",
+      "status": "SKIPPED",
+      "detail": "Stage 'consistency' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "skip:adjudication",
+      "status": "SKIPPED",
+      "detail": "Stage 'adjudication' skipped: pipeline halted by an earlier stage.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: NONE (resubmission needed); approved ₹0; confidence 0.47.",
+      "data": {}
+    }
+  ],
+  "TC004": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP001, claimed ₹1,500.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP001 (Rajesh Kumar) found on roster.",
+      "data": {
+        "member_name": "Rajesh Kumar",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹1,500 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F007",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F007); fields: date, diagnosis, doctor_name, doctor_registration, medicines, patient_name.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F008",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F008); fields: date, hospital_name, line_items, patient_name, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "PASSED",
+      "detail": "All documents belong to the same patient: Rajesh Kumar.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "PASSED",
+      "detail": "The documents are for Rajesh Kumar (the filing member) or a listed dependent of the filing member.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category CONSULTATION (matched on 'consultation').",
+      "data": {
+        "derived_category": "CONSULTATION",
+        "matched_keywords": [
+          "consultation",
+          "consultation fee"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F008: total ₹1,500 matches the itemized sum ₹1,500.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-11-01 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Consultation Fee' (₹1,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'CBC Test' (₹300) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Dengue NS1 Test' (₹200) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "PASSED",
+      "detail": "Payable amount ₹1,500 is within the per-claim limit of ₹5,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "annual_opd_limit",
+      "status": "PASSED",
+      "detail": "YTD ₹5,000 + eligible ₹1,500 is within the annual OPD limit of ₹50,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "network_discount",
+      "status": "INFO",
+      "detail": "Hospital 'City Clinic, Bengaluru' is not a network hospital; no network discount applies.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "copay",
+      "status": "PASSED",
+      "detail": "Co-pay (10%) applied on ₹1,500 = ₹150 deducted, leaving ₹1,350.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_score",
+      "status": "INFO",
+      "detail": "Weighted fraud score 0.00 (review threshold 0.80) = same_day_frequency 0.00×0.30=0.000 [1 claim(s) on 2024-11-01 (limit 2)]; monthly_frequency 0.00×0.20=0.000 [1 claim(s) in November 2024 (limit 6)]; amount_vs_history 0.00×0.25=0.000 [no prior claim history to compare]; near_duplicate 0.00×0.25=0.000 [no near-duplicate in history].",
+      "data": {
+        "fraud_score": 0.0,
+        "threshold": 0.8,
+        "breakdown": [
+          {
+            "signal": "same_day_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) on 2024-11-01 (limit 2)",
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          {
+            "signal": "monthly_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) in November 2024 (limit 6)",
+            "weight": 0.2,
+            "contribution": 0.0
+          },
+          {
+            "signal": "amount_vs_history",
+            "sub_score": 0.0,
+            "detail": "no prior claim history to compare",
+            "weight": 0.25,
+            "contribution": 0.0
+          },
+          {
+            "signal": "near_duplicate",
+            "sub_score": 0.0,
+            "detail": "no near-duplicate in history",
+            "weight": 0.25,
+            "contribution": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_signals",
+      "status": "PASSED",
+      "detail": "No fraud signals: same-day, monthly, and high-value thresholds all clear.",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: APPROVED; approved ₹1,350; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC005": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP005, claimed ₹3,000.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP005 (Vikram Joshi) found on roster.",
+      "data": {
+        "member_name": "Vikram Joshi",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹3,000 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F009",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F009); fields: diagnosis, doctor_name, doctor_registration, medicines, patient_name.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F010",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F010); fields: date, patient_name, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "PASSED",
+      "detail": "All documents belong to the same patient: Vikram Joshi.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "PASSED",
+      "detail": "The documents are for Vikram Joshi (the filing member) or a listed dependent of the filing member.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents carry no specific evidence for any other category; the filed category CONSULTATION is accepted.",
+      "data": {
+        "derived_category": null
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-15 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Type 2 Diabetes Mellitus' (₹3,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-10-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "waiting_period:diabetes",
+      "status": "FAILED",
+      "detail": "'diabetes' waiting period of 90 days not completed; eligible from 2024-11-30 (matched on 'diabetes').",
+      "data": {
+        "eligible_from": "2024-11-30",
+        "condition": "diabetes"
+      }
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: REJECTED; approved ₹0; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC006": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: DENTAL for member EMP002, claimed ₹12,000.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP002 (Priya Singh) found on roster.",
+      "data": {
+        "member_name": "Priya Singh",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'DENTAL' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹12,000 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F011",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F011); fields: hospital_name, line_items, patient_name, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 1 of 1 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for DENTAL are present: HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "PASSED",
+      "detail": "All documents belong to the same patient: Priya Singh.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "PASSED",
+      "detail": "The documents are for Priya Singh (the filing member) or a listed dependent of the filing member.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category DENTAL (matched on 'dental').",
+      "data": {
+        "derived_category": "DENTAL",
+        "matched_keywords": [
+          "dental",
+          "teeth",
+          "root canal"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F011: total ₹12,000 matches the itemized sum ₹12,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-15 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Root Canal Treatment' (₹8,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "FAILED",
+      "detail": "Line item 'Teeth Whitening' (₹4,000) rejected: 'Teeth Whitening' matches excluded dental item 'Teeth Whitening' under the policy.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "PASSED",
+      "detail": "Payable amount ₹8,000 is within the per-claim limit of ₹10,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "annual_opd_limit",
+      "status": "PASSED",
+      "detail": "YTD ₹0 + eligible ₹8,000 is within the annual OPD limit of ₹50,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "network_discount",
+      "status": "INFO",
+      "detail": "Hospital 'Smile Dental Clinic' is not a network hospital; no network discount applies.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "copay",
+      "status": "INFO",
+      "detail": "No co-pay applies to DENTAL.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_score",
+      "status": "INFO",
+      "detail": "Weighted fraud score 0.00 (review threshold 0.80) = same_day_frequency 0.00×0.30=0.000 [1 claim(s) on 2024-10-15 (limit 2)]; monthly_frequency 0.00×0.20=0.000 [1 claim(s) in October 2024 (limit 6)]; amount_vs_history 0.00×0.25=0.000 [no prior claim history to compare]; near_duplicate 0.00×0.25=0.000 [no near-duplicate in history].",
+      "data": {
+        "fraud_score": 0.0,
+        "threshold": 0.8,
+        "breakdown": [
+          {
+            "signal": "same_day_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) on 2024-10-15 (limit 2)",
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          {
+            "signal": "monthly_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) in October 2024 (limit 6)",
+            "weight": 0.2,
+            "contribution": 0.0
+          },
+          {
+            "signal": "amount_vs_history",
+            "sub_score": 0.0,
+            "detail": "no prior claim history to compare",
+            "weight": 0.25,
+            "contribution": 0.0
+          },
+          {
+            "signal": "near_duplicate",
+            "sub_score": 0.0,
+            "detail": "no near-duplicate in history",
+            "weight": 0.25,
+            "contribution": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_signals",
+      "status": "PASSED",
+      "detail": "No fraud signals: same-day, monthly, and high-value thresholds all clear.",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: PARTIAL; approved ₹8,000; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC007": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: DIAGNOSTIC for member EMP007, claimed ₹15,000.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP007 (Suresh Patil) found on roster.",
+      "data": {
+        "member_name": "Suresh Patil",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'DIAGNOSTIC' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹15,000 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F012",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F012); fields: diagnosis, doctor_name, doctor_registration, tests_ordered.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F013",
+      "status": "PASSED",
+      "detail": "Structured content available for LAB_REPORT (F013); fields: test_name.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F014",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F014); fields: line_items, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 3 of 3 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for DIAGNOSTIC are present: PRESCRIPTION, LAB_REPORT, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "LAB_REPORT",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "LAB_REPORT",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "SKIPPED",
+      "detail": "No patient names available on the documents to compare against the filing member; check skipped. If the claim is payable, manual review will be recommended because identity was not verified.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category DIAGNOSTIC (matched on 'mri').",
+      "data": {
+        "derived_category": "DIAGNOSTIC",
+        "matched_keywords": [
+          "mri"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F014: total ₹15,000 matches the itemized sum ₹15,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-11-02 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'MRI Lumbar Spine' (₹15,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "FAILED",
+      "detail": "Pre-authorization required for 'MRI Lumbar Spine' (₹15,000 > ₹10,000) but not obtained.",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: REJECTED; approved ₹0; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC008": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP003, claimed ₹7,500.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP003 (Amit Verma) found on roster.",
+      "data": {
+        "member_name": "Amit Verma",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹7,500 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F015",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F015); fields: diagnosis, doctor_name, doctor_registration, medicines.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F016",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F016); fields: line_items, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "SKIPPED",
+      "detail": "No patient names available on the documents to compare against the filing member; check skipped. If the claim is payable, manual review will be recommended because identity was not verified.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category CONSULTATION (matched on 'consultation').",
+      "data": {
+        "derived_category": "CONSULTATION",
+        "matched_keywords": [
+          "consultation",
+          "consultation fee"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F016: total ₹7,500 matches the itemized sum ₹7,500.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-20 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Consultation Fee' (₹2,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Medicines' (₹5,500) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "FAILED",
+      "detail": "Payable amount ₹7,500 > per-claim limit ₹5,000.",
+      "data": {
+        "per_claim_limit": 5000.0,
+        "claimed_amount": 7500.0,
+        "payable_amount": 7500.0
+      }
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: REJECTED; approved ₹0; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC009": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP008, claimed ₹4,800.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP008 (Ravi Menon) found on roster.",
+      "data": {
+        "member_name": "Ravi Menon",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹4,800 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F017",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F017); fields: diagnosis, doctor_name.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F018",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F018); fields: total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "SKIPPED",
+      "detail": "No patient names available on the documents to compare against the filing member; check skipped. If the claim is payable, manual review will be recommended because identity was not verified.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents carry no specific evidence for any other category; the filed category CONSULTATION is accepted.",
+      "data": {
+        "derived_category": null
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-30 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Migraine' (₹4,800) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "PASSED",
+      "detail": "Payable amount ₹4,800 is within the per-claim limit of ₹5,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "annual_opd_limit",
+      "status": "PASSED",
+      "detail": "YTD ₹0 + eligible ₹4,800 is within the annual OPD limit of ₹50,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "network_discount",
+      "status": "INFO",
+      "detail": "No hospital specified; no network discount applies.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "copay",
+      "status": "PASSED",
+      "detail": "Co-pay (10%) applied on ₹4,800 = ₹480 deducted, leaving ₹4,320.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_score",
+      "status": "INFO",
+      "detail": "Weighted fraud score 0.55 (review threshold 0.80) = same_day_frequency 1.00×0.30=0.300 [4 claim(s) on 2024-10-30 (limit 2)]; monthly_frequency 0.50×0.20=0.100 [4 claim(s) in October 2024 (limit 6)]; amount_vs_history 0.61×0.25=0.152 [₹4,800 vs member avg ₹1,700]; near_duplicate 0.00×0.25=0.000 [no near-duplicate in history].",
+      "data": {
+        "fraud_score": 0.552,
+        "threshold": 0.8,
+        "breakdown": [
+          {
+            "signal": "same_day_frequency",
+            "sub_score": 1.0,
+            "detail": "4 claim(s) on 2024-10-30 (limit 2)",
+            "weight": 0.3,
+            "contribution": 0.3
+          },
+          {
+            "signal": "monthly_frequency",
+            "sub_score": 0.5,
+            "detail": "4 claim(s) in October 2024 (limit 6)",
+            "weight": 0.2,
+            "contribution": 0.1
+          },
+          {
+            "signal": "amount_vs_history",
+            "sub_score": 0.607843137254902,
+            "detail": "₹4,800 vs member avg ₹1,700",
+            "weight": 0.25,
+            "contribution": 0.152
+          },
+          {
+            "signal": "near_duplicate",
+            "sub_score": 0.0,
+            "detail": "no near-duplicate in history",
+            "weight": 0.25,
+            "contribution": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_signals",
+      "status": "FAILED",
+      "detail": "Fraud signals detected: This is claim number 4 from member EMP008 on 2024-10-30, above the same-day limit of 2. Prior same-day claims: CLM_0081 (₹1,200, City Clinic A), CLM_0082 (₹1,800, City Clinic B), CLM_0083 (₹2,100, Wellness Center).",
+      "data": {
+        "signal_count": 1
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "decision_routing",
+      "status": "INFO",
+      "detail": "Otherwise-payable claim routed to MANUAL_REVIEW due to fraud signals.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: MANUAL_REVIEW; approved ₹4,320; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC010": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP010, claimed ₹4,500.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP010 (Deepak Shah) found on roster.",
+      "data": {
+        "member_name": "Deepak Shah",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹4,500 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F019",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F019); fields: diagnosis, doctor_name, doctor_registration, medicines, patient_name.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F020",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F020); fields: hospital_name, line_items, patient_name, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "PASSED",
+      "detail": "All documents belong to the same patient: Deepak Shah.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "PASSED",
+      "detail": "The documents are for Deepak Shah (the filing member) or a listed dependent of the filing member.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category CONSULTATION (matched on 'consultation').",
+      "data": {
+        "derived_category": "CONSULTATION",
+        "matched_keywords": [
+          "consultation",
+          "consultation fee"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F020: total ₹4,500 matches the itemized sum ₹4,500.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-11-03 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Consultation Fee' (₹1,500) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Medicines' (₹3,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "PASSED",
+      "detail": "Payable amount ₹4,500 is within the per-claim limit of ₹5,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "annual_opd_limit",
+      "status": "PASSED",
+      "detail": "YTD ₹8,000 + eligible ₹4,500 is within the annual OPD limit of ₹50,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "network_discount",
+      "status": "PASSED",
+      "detail": "'Apollo Hospitals' is a network hospital. Network discount (20%) applied first on ₹4,500 = ₹900 discount, leaving ₹3,600.",
+      "data": {
+        "order": "discount_before_copay"
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "copay",
+      "status": "PASSED",
+      "detail": "Co-pay (10%) applied on ₹3,600 = ₹360 deducted, leaving ₹3,240.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_score",
+      "status": "INFO",
+      "detail": "Weighted fraud score 0.00 (review threshold 0.80) = same_day_frequency 0.00×0.30=0.000 [1 claim(s) on 2024-11-03 (limit 2)]; monthly_frequency 0.00×0.20=0.000 [1 claim(s) in November 2024 (limit 6)]; amount_vs_history 0.00×0.25=0.000 [no prior claim history to compare]; near_duplicate 0.00×0.25=0.000 [no near-duplicate in history].",
+      "data": {
+        "fraud_score": 0.0,
+        "threshold": 0.8,
+        "breakdown": [
+          {
+            "signal": "same_day_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) on 2024-11-03 (limit 2)",
+            "weight": 0.3,
+            "contribution": 0.0
+          },
+          {
+            "signal": "monthly_frequency",
+            "sub_score": 0.0,
+            "detail": "1 claim(s) in November 2024 (limit 6)",
+            "weight": 0.2,
+            "contribution": 0.0
+          },
+          {
+            "signal": "amount_vs_history",
+            "sub_score": 0.0,
+            "detail": "no prior claim history to compare",
+            "weight": 0.25,
+            "contribution": 0.0
+          },
+          {
+            "signal": "near_duplicate",
+            "sub_score": 0.0,
+            "detail": "no near-duplicate in history",
+            "weight": 0.25,
+            "contribution": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_signals",
+      "status": "PASSED",
+      "detail": "No fraud signals: same-day, monthly, and high-value thresholds all clear.",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: APPROVED; approved ₹3,240; confidence 0.95.",
+      "data": {}
+    }
+  ],
+  "TC011": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: ALTERNATIVE_MEDICINE for member EMP006, claimed ₹4,000.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP006 (Kavita Nair) found on roster.",
+      "data": {
+        "member_name": "Kavita Nair",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'ALTERNATIVE_MEDICINE' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹4,000 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F021",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F021); fields: diagnosis, doctor_name, doctor_registration, treatment.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F022",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F022); fields: hospital_name, line_items, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for ALTERNATIVE_MEDICINE are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "SKIPPED",
+      "detail": "No patient names available on the documents to compare against the filing member; check skipped. If the claim is payable, manual review will be recommended because identity was not verified.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category ALTERNATIVE_MEDICINE (matched on 'ayur').",
+      "data": {
+        "derived_category": "ALTERNATIVE_MEDICINE",
+        "matched_keywords": [
+          "ayur",
+          "panchakarma"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F022: total ₹4,000 matches the itemized sum ₹4,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-28 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Panchakarma Therapy (5 sessions)' (₹3,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "PASSED",
+      "detail": "Line item 'Consultation' (₹1,000) is covered.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions_summary",
+      "status": "PASSED",
+      "detail": "No policy exclusions apply to this claim.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "initial_waiting_period",
+      "status": "PASSED",
+      "detail": "Initial 30-day waiting period completed on 2024-05-01.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "condition_waiting_periods",
+      "status": "PASSED",
+      "detail": "No condition-specific waiting periods apply to this diagnosis.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "pre_authorization",
+      "status": "PASSED",
+      "detail": "No pre-authorization requirement applies to this category.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "per_claim_limit",
+      "status": "PASSED",
+      "detail": "Payable amount ₹4,000 is within the per-claim limit of ₹8,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "annual_opd_limit",
+      "status": "PASSED",
+      "detail": "YTD ₹0 + eligible ₹4,000 is within the annual OPD limit of ₹50,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "network_discount",
+      "status": "INFO",
+      "detail": "Hospital 'Ayur Wellness Centre' is not a network hospital; no network discount applies.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "copay",
+      "status": "INFO",
+      "detail": "No co-pay applies to ALTERNATIVE_MEDICINE.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "fraud_signals",
+      "status": "DEGRADED",
+      "detail": "Fraud-signal component failed and was skipped: Fraud-signal analysis component failed (simulated failure flag).. Pipeline continued; manual review recommended because processing was incomplete.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "identity_advisory",
+      "status": "INFO",
+      "detail": "No patient name could be read from any document; identity could not be verified by name. The filing member and policy are otherwise consistent and the amount is below the high-value threshold, so the claim is not routed to review on this basis alone (advisory only).",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: APPROVED; approved ₹4,000; confidence 0.70.",
+      "data": {}
+    }
+  ],
+  "TC012": [
+    {
+      "stage": "orchestrator",
+      "check": "start",
+      "status": "INFO",
+      "detail": "Processing claim CLM-XXXXXXXXXX: CONSULTATION for member EMP009, claimed ₹8,000.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "policy_id",
+      "status": "PASSED",
+      "detail": "Policy 'PLUM_GHI_2024' is active.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "member_exists",
+      "status": "PASSED",
+      "detail": "Member EMP009 (Anita Desai) found on roster.",
+      "data": {
+        "member_name": "Anita Desai",
+        "relationship": "SELF"
+      }
+    },
+    {
+      "stage": "intake",
+      "check": "category_covered",
+      "status": "PASSED",
+      "detail": "Category 'CONSULTATION' is covered.",
+      "data": {}
+    },
+    {
+      "stage": "intake",
+      "check": "minimum_amount",
+      "status": "PASSED",
+      "detail": "₹8,000 meets the ₹500 minimum.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F023",
+      "status": "PASSED",
+      "detail": "Structured content available for PRESCRIPTION (F023); fields: diagnosis, doctor_name, doctor_registration, treatment.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "extract:F024",
+      "status": "PASSED",
+      "detail": "Structured content available for HOSPITAL_BILL (F024); fields: line_items, total.",
+      "data": {}
+    },
+    {
+      "stage": "extraction",
+      "check": "summary",
+      "status": "INFO",
+      "detail": "Extracted 2 of 2 documents; extraction confidence 1.00.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "required_document_types",
+      "status": "PASSED",
+      "detail": "All required document types for CONSULTATION are present: PRESCRIPTION, HOSPITAL_BILL.",
+      "data": {
+        "required": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ],
+        "provided": [
+          "PRESCRIPTION",
+          "HOSPITAL_BILL"
+        ]
+      }
+    },
+    {
+      "stage": "document_verification",
+      "check": "readability",
+      "status": "PASSED",
+      "detail": "All documents are readable.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "patient_consistency",
+      "status": "SKIPPED",
+      "detail": "No patient names available to compare; check skipped.",
+      "data": {}
+    },
+    {
+      "stage": "document_verification",
+      "check": "gate",
+      "status": "PASSED",
+      "detail": "All documents present, readable, and consistent.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "patient_identity",
+      "status": "SKIPPED",
+      "detail": "No patient names available on the documents to compare against the filing member; check skipped. If the claim is payable, manual review will be recommended because identity was not verified.",
+      "data": {}
+    },
+    {
+      "stage": "consistency",
+      "check": "category_consistency",
+      "status": "PASSED",
+      "detail": "The documents support the filed category CONSULTATION (matched on 'consultation').",
+      "data": {
+        "derived_category": "CONSULTATION",
+        "matched_keywords": [
+          "consultation"
+        ]
+      }
+    },
+    {
+      "stage": "adjudication",
+      "check": "amount_reconciliation",
+      "status": "PASSED",
+      "detail": "Document F024: total ₹8,000 matches the itemized sum ₹8,000.",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "policy_period",
+      "status": "PASSED",
+      "detail": "Treatment date 2024-10-18 is within the policy period (2024-04-01 to 2025-03-31).",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "FAILED",
+      "detail": "Line item 'Bariatric Consultation' (₹3,000) rejected: 'Bariatric Consultation' falls under policy exclusion 'Bariatric surgery' (matched on 'bariatric').",
+      "data": {}
+    },
+    {
+      "stage": "adjudication",
+      "check": "exclusions",
+      "status": "FAILED",
+      "detail": "Line item 'Personalised Diet and Nutrition Program' (₹5,000) rejected: 'Personalised Diet and Nutrition Program' falls under policy exclusion 'Obesity and weight loss programs' (matched on 'nutrition program').",
+      "data": {}
+    },
+    {
+      "stage": "confidence_gate",
+      "check": "passed",
+      "status": "PASSED",
+      "detail": "All decision-critical documents were read with sufficient confidence; no confidence hold applied.",
+      "data": {}
+    },
+    {
+      "stage": "orchestrator",
+      "check": "complete",
+      "status": "INFO",
+      "detail": "Decision: REJECTED; approved ₹0; confidence 0.95.",
+      "data": {}
+    }
+  ]
+}

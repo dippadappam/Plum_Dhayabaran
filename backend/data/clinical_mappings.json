@@ -1,0 +1,33 @@
+{
+  "_comment": "Clinical knowledge tables (synonyms / keyword evidence) used by the deterministic matcher. This is clinical knowledge, NOT policy spec — kept out of policy_terms.json (Plum's given spec) and out of code. Loaded once at startup by app/clinical_mappings.py and read by app/condition_mapping.py and app/category_evidence.py. Key order and list order are significant (the matcher reports the first matching keyword/condition), so preserve order when editing.",
+  "waiting_condition_keywords": {
+    "diabetes": ["diabetes", "diabetic", "diabetes mellitus", "t2dm", "niddm", "hyperglycemia"],
+    "hypertension": ["hypertension", "high blood pressure", "htn"],
+    "thyroid_disorders": ["thyroid", "hypothyroid", "hyperthyroid", "goiter"],
+    "joint_replacement": ["joint replacement", "knee replacement", "hip replacement", "arthroplasty"],
+    "maternity": ["maternity", "pregnancy", "antenatal", "delivery", "caesarean", "cesarean"],
+    "mental_health": ["depression", "anxiety", "psychiatric", "mental health", "bipolar", "schizophrenia"],
+    "obesity_treatment": ["obesity", "bariatric", "weight loss", "morbid obesity"],
+    "hernia": ["hernia"],
+    "cataract": ["cataract"]
+  },
+  "exclusion_keywords": {
+    "Obesity and weight loss programs": ["obesity", "weight loss", "diet program", "diet plan", "nutrition program", "morbid obesity"],
+    "Bariatric surgery": ["bariatric"],
+    "Cosmetic or aesthetic procedures": ["cosmetic", "aesthetic", "whitening", "veneer", "bleaching"],
+    "Self-inflicted injuries": ["self inflicted", "self harm"],
+    "Substance abuse treatment": ["substance abuse", "de addiction", "alcohol dependence", "drug dependence"],
+    "Experimental treatments": ["experimental"],
+    "Infertility and assisted reproduction": ["infertility", "ivf", "assisted reproduction"],
+    "Vaccination (non-medically necessary)": ["vaccination", "vaccine"],
+    "Health supplements and tonics": ["supplement", "tonic", "multivitamin"]
+  },
+  "category_evidence": {
+    "CONSULTATION": ["consultation", "consultation fee", "consultation charges", "opd", "opd charges", "op charges", "doctor fee", "doctor's fee", "doctor visit", "visit charges", "specialist fee", "general physician", "physician", "review", "follow up", "follow-up"],
+    "DIAGNOSTIC": ["mri", "ct scan", "pet scan", "x ray", "xray", "ultrasound", "sonography", "usg", "doppler", "scan", "pathology", "lab report", "biopsy", "endoscopy", "mammography"],
+    "PHARMACY": ["pharmacy", "chemist", "druggist", "medical store"],
+    "DENTAL": ["dental", "tooth", "teeth", "root canal", "rct", "gum", "orthodontic", "braces", "caries", "gingivitis", "filling", "crown", "scaling", "denture", "extraction"],
+    "VISION": ["eye", "vision", "spectacles", "glasses", "contact lens", "cataract", "lasik", "ophthalmology", "optometry", "optician", "refraction", "intraocular lens"],
+    "ALTERNATIVE_MEDICINE": ["ayurveda", "ayurvedic", "ayur", "panchakarma", "homeopathy", "homeopathic", "unani", "siddha", "naturopathy", "vaidya"]
+  }
+}
